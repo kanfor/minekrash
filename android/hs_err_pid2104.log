@@ -1,0 +1,154 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=2104, tid=3900
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_25-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.25-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01e4bc00):  JavaThread "Unknown thread" [_thread_in_vm, id=3900, stack(0x01ca0000,0x01cf0000)]
+
+Stack: [0x01ca0000,0x01cf0000],  sp=0x01cef3e8,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19796b]
+V  [jvm.dll+0x1908e6]
+V  [jvm.dll+0x3b4e9]
+V  [jvm.dll+0x3b69e]
+V  [jvm.dll+0x4a063]
+V  [jvm.dll+0x9dc8e]
+V  [jvm.dll+0x9df52]
+V  [jvm.dll+0x145a01]
+V  [jvm.dll+0x169ab8]
+V  [jvm.dll+0xdaea1]
+C  [javaw.exe+0x13e4]
+C  [javaw.exe+0x1eb7]
+C  [javaw.exe+0xaba1]
+C  [javaw.exe+0xac2b]
+C  [KERNEL32.DLL+0x1919f]
+C  [ntdll.dll+0x4a22b]
+C  [ntdll.dll+0x4a201]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01e4bc00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3900, stack(0x01ca0000,0x01cf0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.012 loading class java/lang/CharSequence done
+Event: 0.012 loading class java/lang/String done
+Event: 0.012 loading class java/lang/Class
+Event: 0.012 loading class java/lang/reflect/AnnotatedElement
+Event: 0.012 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.012 loading class java/lang/reflect/GenericDeclaration
+Event: 0.012 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.012 loading class java/lang/reflect/Type
+Event: 0.012 loading class java/lang/reflect/Type done
+Event: 0.012 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x001a0000 - 0x001d0000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\javaw.exe
+0x77340000 - 0x774a8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x763c0000 - 0x76500000 	C:\Windows\SYSTEM32\KERNEL32.DLL
+0x76500000 - 0x765cf000 	C:\Windows\SYSTEM32\KERNELBASE.dll
+0x72b80000 - 0x72c19000 	C:\Windows\system32\apphelp.dll
+0x6aa60000 - 0x6acb9000 	C:\Windows\AppPatch\AcGenral.DLL
+0x76610000 - 0x766ce000 	C:\Windows\SYSTEM32\msvcrt.dll
+0x76d30000 - 0x76d6e000 	C:\Windows\SYSTEM32\sechost.dll
+0x74d60000 - 0x74d7d000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x76d70000 - 0x76db1000 	C:\Windows\SYSTEM32\SHLWAPI.dll
+0x74920000 - 0x749fb000 	C:\Windows\SYSTEM32\UxTheme.dll
+0x766f0000 - 0x7683f000 	C:\Windows\SYSTEM32\USER32.dll
+0x76040000 - 0x76147000 	C:\Windows\SYSTEM32\GDI32.dll
+0x741d0000 - 0x741f0000 	C:\Windows\SYSTEM32\WINMM.dll
+0x72620000 - 0x72632000 	C:\Windows\SYSTEM32\samcli.dll
+0x768d0000 - 0x769dc000 	C:\Windows\SYSTEM32\ole32.dll
+0x76840000 - 0x768c7000 	C:\Windows\SYSTEM32\OLEAUT32.dll
+0x72600000 - 0x72615000 	C:\Windows\SYSTEM32\MSACM32.dll
+0x74a00000 - 0x74a08000 	C:\Windows\SYSTEM32\VERSION.dll
+0x74e80000 - 0x76040000 	C:\Windows\SYSTEM32\SHELL32.dll
+0x74cc0000 - 0x74cd9000 	C:\Windows\SYSTEM32\USERENV.dll
+0x74900000 - 0x74918000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x728f0000 - 0x72a10000 	C:\Windows\SYSTEM32\urlmon.dll
+0x76ab0000 - 0x76b28000 	C:\Windows\SYSTEM32\ADVAPI32.dll
+0x73d60000 - 0x73dbe000 	C:\Windows\SYSTEM32\WINSPOOL.DRV
+0x72860000 - 0x72874000 	C:\Windows\SYSTEM32\MPR.dll
+0x76c10000 - 0x76cc1000 	C:\Windows\SYSTEM32\RPCRT4.dll
+0x74d50000 - 0x74d59000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x77120000 - 0x7726e000 	C:\Windows\SYSTEM32\combase.dll
+0x741b0000 - 0x741d0000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x74bf0000 - 0x74bfe000 	C:\Windows\SYSTEM32\profapi.dll
+0x72ea0000 - 0x730b9000 	C:\Windows\SYSTEM32\iertutil.dll
+0x730c0000 - 0x7327d000 	C:\Windows\SYSTEM32\WININET.dll
+0x74cf0000 - 0x74d43000 	C:\Windows\SYSTEM32\bcryptPrimitives.dll
+0x765d0000 - 0x7660a000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x74190000 - 0x741af000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x74a40000 - 0x74ab6000 	C:\Windows\SYSTEM32\SHCORE.DLL
+0x76200000 - 0x76225000 	C:\Windows\system32\IMM32.DLL
+0x74d80000 - 0x74e77000 	C:\Windows\SYSTEM32\MSCTF.dll
+0x73b30000 - 0x73d16000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_a9efdb8b01377ea7\COMCTL32.dll
+0x72640000 - 0x726ff000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\msvcr100.dll
+0x73780000 - 0x73b24000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\client\jvm.dll
+0x73770000 - 0x73778000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x761f0000 - 0x761f6000 	C:\Windows\SYSTEM32\PSAPI.DLL
+0x76dc0000 - 0x76e0d000 	C:\Windows\SYSTEM32\WS2_32.dll
+0x761e0000 - 0x761e7000 	C:\Windows\SYSTEM32\NSI.dll
+0x73760000 - 0x7376c000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\verify.dll
+0x73730000 - 0x73751000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\java.dll
+0x73710000 - 0x73723000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\zip.dll
+0x679c0000 - 0x67b08000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Program Files (x86)\Android\android-sdk\platforms\android-19\android.jar 
+java_command: com.badlogic.gdx.graphics.g2d.freetype.FreetypeBuild
+java_class_path (initial): C:\Eclipse_proyectos\Minekrash\android\bin\classes;C:\Eclipse_proyectos\Minekrash\core\bin;C:\Users\Kanfor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.5.2\de5a9ab0cb0993bf43b81dbbb66ad6dee09e4613\gdx-freetype-1.5.2.jar;C:\Users\Kanfor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.5.2\4e8961d210e6451fda0f3c4f5b6a0685d61533b9\gdx-1.5.2.jar;C:\Users\Kanfor\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.5.2\51f73ee35e73a6d76fd245f83ec3f6a3316744d5\gdx-backend-android-1.5.2.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_25
+PATH=C:/Program Files (x86)/Java/jre1.8.0_25/bin/client;C:/Program Files (x86)/Java/jre1.8.0_25/bin;C:/Program Files (x86)/Java/jre1.8.0_25/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\eclipse;
+USERNAME=Kanfor
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 4124504k(1774388k free), swap 4845400k(2298196k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.25-b02) for windows-x86 JRE (1.8.0_25-b18), built on Oct  7 2014 14:31:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Jan 22 18:47:28 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
